@@ -112,7 +112,7 @@
 --------------------------------------------------------------*/
 
 .sword {
-	background-color: rgb(235, 239, 254);
+	background-color: $secondary-color;
 	padding: 70px 0px;
 	@media only screen and (max-width: 767px) {
 		padding: 40px 0px;
@@ -125,6 +125,7 @@
 			font-family: $font-sans;
 			font-size: 36px;
 			margin-bottom: 14px;
+      color: #fff;
 			@media only screen and (max-width: 767px) {
 				font-size: 30px;
 				margin-bottom: 10px;

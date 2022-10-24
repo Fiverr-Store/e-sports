@@ -218,7 +218,7 @@ h6 a {
   padding: 0;
   font-size: 24px;
   text-decoration: none;
-  color: #1a191f;
+  color: #2f3136;
   text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.34);
 }
 .navbar .navbar-brand img {
@@ -681,7 +681,7 @@ h6 a {
 # sword
 --------------------------------------------------------------*/
 .sword {
-  background-color: rgb(235, 239, 254);
+  background-color: #2f3136;
   padding: 70px 0px;
 }
 @media only screen and (max-width: 767px) {
@@ -698,6 +698,7 @@ h6 a {
   font-family: "Quicksand", sans-serif;
   font-size: 36px;
   margin-bottom: 14px;
+  color: #fff;
 }
 @media only screen and (max-width: 767px) {
   .sword .s-text h2 {
