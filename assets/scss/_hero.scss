@@ -13,14 +13,16 @@
    min-height: 780px;
    }
    @media only screen and (max-width: 991px) {
-    padding-top: 70px;
+    padding-top: 80px;
     text-align: center;
+    padding-bottom: 5px;
    }
    @media only screen and (max-width: 767px) {
-    padding-top: 0px;
+    min-height: auto;
+    padding-top: 70px;
    }
    @media only screen and (max-width: 482px) {
-    min-height: 706px;
+    min-height: auto;
    }
 	.hero-inner {
 		position: relative;
@@ -63,11 +65,14 @@
 	}
 
 	.hero-img {
-		max-width: 100%;
+		max-width: 112%;
 		height: auto;
 		position: relative;
-		top: 30px;
+		top: 33px;
 		z-index: 2;
+    @media only screen and (max-width: 1199px) {
+     max-width: 100%;
+    }
     @media only screen and (max-width: 991px) {
      top: 0;
     }
@@ -109,23 +114,31 @@
 		fill: #ffffff;
 	}
 
-	.btn-white {
+
+  .btn-invite {
+		display: inline-flex;
+		align-items: center;
 		text-decoration: none;
-		display: inline-block;
 		border: 0;
-		background-color: #ffffff;
-		color: $title-color;
-		font-size: 15px;
-		font-weight: 500;
-		padding: 13px 30px;
-		border-radius: 3px;
-		transition: all 0.2s ease-in;
-		&:hover {
-			background-color: $main-color;
-			color: #ffffff;
+		background-color: #9eaffa;
+		border-radius: 50px;
+    padding: 0 18px 0 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+		img {
+			width: 55px;
+			height: 55px;
+      margin-right: 6px;
+      @media only screen and (max-width: 767px) {
+       width: 50px;
+       height: 50px;
+      }
 		}
-    @media only screen and (max-width: 482px) {
-     padding: 11px 26px;
+    transition: all .2s ease-in;
+    &:hover{
+      background-color: $text-color;
     }
 	}
+
 }

@@ -4,11 +4,11 @@
 --------------------------------------------------------------*/
 ::-moz-selection {
   color: #1e1e1e;
-  background: #ee4346;
+  background: #c02a11;
 }
 ::selection {
   color: #1e1e1e;
-  background: #ee4346;
+  background: #c02a11;
 }
 
 body {
@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #ee4346;
+  color: #c02a11;
 }
 a:focus, a:hover {
   text-decoration: none;
@@ -90,7 +90,7 @@ h6 a {
 .scroll-top {
   width: 35px;
   height: 35px;
-  background-color: #ee4346;
+  background-color: #c02a11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +134,7 @@ h6 a {
 .loader {
   width: 48px;
   height: 48px;
-  border: 2px solid #ee4346;
+  border: 2px solid #c02a11;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
@@ -155,7 +155,7 @@ h6 a {
   position: absolute;
   left: 50%;
   top: 0;
-  background: #ee4346;
+  background: #c02a11;
   width: 3px;
   height: 24px;
   -webkit-transform: translateX(-50%);
@@ -232,7 +232,7 @@ h6 a {
   }
 }
 .navbar .navbar-brand span {
-  color: #ee4346;
+  color: #c02a11;
 }
 @media only screen and (max-width: 767px) {
   .navbar .navbar-brand {
@@ -262,7 +262,7 @@ h6 a {
   position: relative;
 }
 .navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a.active {
-  color: #ee4346;
+  color: #c02a11;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .navbar .navbar-nav .nav-item a {
@@ -401,7 +401,7 @@ h6 a {
   position: relative;
   width: 100%;
   min-height: 850px;
-  background-color: #ee4346;
+  background-color: #c02a11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,18 +416,20 @@ h6 a {
 }
 @media only screen and (max-width: 991px) {
   .hero-area {
-    padding-top: 70px;
+    padding-top: 80px;
     text-align: center;
+    padding-bottom: 5px;
   }
 }
 @media only screen and (max-width: 767px) {
   .hero-area {
-    padding-top: 0px;
+    min-height: auto;
+    padding-top: 70px;
   }
 }
 @media only screen and (max-width: 482px) {
   .hero-area {
-    min-height: 706px;
+    min-height: auto;
   }
 }
 .hero-area .hero-inner {
@@ -478,11 +480,16 @@ h6 a {
   }
 }
 .hero-area .hero-img {
-  max-width: 100%;
+  max-width: 112%;
   height: auto;
   position: relative;
-  top: 30px;
+  top: 33px;
   z-index: 2;
+}
+@media only screen and (max-width: 1199px) {
+  .hero-area .hero-img {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 991px) {
   .hero-area .hero-img {
@@ -523,27 +530,37 @@ h6 a {
 .hero-area .custom-shape-divider-bottom-1666593860 .shape-fill {
   fill: #ffffff;
 }
-.hero-area .btn-white {
+.hero-area .btn-invite {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
-  display: inline-block;
   border: 0;
-  background-color: #ffffff;
-  color: #1e1e1e;
+  background-color: #9eaffa;
+  border-radius: 50px;
+  padding: 0 18px 0 0;
+  color: #fff;
   font-size: 15px;
   font-weight: 500;
-  padding: 13px 30px;
-  border-radius: 3px;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.hero-area .btn-white:hover {
-  background-color: #000000;
-  color: #ffffff;
+.hero-area .btn-invite img {
+  width: 55px;
+  height: 55px;
+  margin-right: 6px;
 }
-@media only screen and (max-width: 482px) {
-  .hero-area .btn-white {
-    padding: 11px 26px;
+@media only screen and (max-width: 767px) {
+  .hero-area .btn-invite img {
+    width: 50px;
+    height: 50px;
   }
+}
+.hero-area .btn-invite:hover {
+  background-color: #898f93;
 }
 
 .abt-sec {
@@ -600,7 +617,7 @@ h6 a {
   margin-bottom: 10px;
 }
 .abt-sec .list-point i {
-  color: #ee4346;
+  color: #c02a11;
   margin-right: 8px;
   font-weight: bold;
   position: relative;
@@ -711,7 +728,7 @@ h6 a {
 # cta
 --------------------------------------------------------------*/
 .cta {
-  background-color: #ee4346;
+  background-color: #c02a11;
   padding: 70px 0px;
   text-align: center;
 }
@@ -800,13 +817,13 @@ footer .footer-links ul li:not(:last-child) {
 footer .footer-links ul li a {
   display: inline-block;
   font-size: 25px;
-  color: #ee4346;
+  color: #c02a11;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
 footer .footer-links ul li a:hover {
-  color: #ee4346;
+  color: #c02a11;
 }
 footer .footer-links ul li a img {
   height: 35px;
