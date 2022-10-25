@@ -132,37 +132,41 @@ h6 a {
 	left: 0;
 	z-index: 99999999;
 	background-color: #fff;
-}
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 2px solid $primary-color;
-  border-radius: 50%;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
-}
-.loader::after {
-  content: '';
-  box-sizing: border-box;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  background: $primary-color;
-  width: 3px;
-  height: 24px;
-  transform: translateX(-50%);
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 64px;
+    height: 64px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .loader:after{
+    content: '';
+    position: absolute;
+    inset: 8px;
+    margin: auto;
+    background: $secondary-color;
+     border-radius: 50%;
+  }
+  .loader:before{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    margin: auto;
+    background: #de3500;
+    animation: crlMugLoader 2s linear infinite alternate;
+  }
+
+
 }
 
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+
+@keyframes crlMugLoader {
+  0%  ,10% { transform: translateY(64px) }
+  90% , 100% { transform: translateY(0px) }
 }
